@@ -3,6 +3,19 @@
 
 import Image from "next/image";
 
+type NewsItem = {
+  id: number;
+  title: string;
+  date: string;
+  image?: string;
+};
+
+type NewsColumnProps = {
+  title: string;
+  color: string;
+  items: NewsItem[];
+};
+
 const data = {
   pelayanan: {
     title: "Pelayanan",
@@ -96,7 +109,7 @@ const data = {
   },
 };
 
-function NewsColumn({ title, color, items }: any) {
+function NewsColumn({ title, color, items }: NewsColumnProps) {
   return (
     <div className="bg-transparent   p-4">
       {/* Header */}
@@ -108,7 +121,7 @@ function NewsColumn({ title, color, items }: any) {
       </div>
 
       <div className="space-y-4">
-        {items.map((item: any, index: number) => (
+        {items.map((item, index: number) => (
           <div
             key={item.id}
             className={`flex flex-col ${
