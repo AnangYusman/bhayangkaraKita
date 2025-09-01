@@ -189,12 +189,12 @@ export default function Login() {
   return (
     <div className="min-h-screen flex">
       {/* Left Side - Logo Section */}
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 relative overflow-hidden">
+      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-red-800 via-black to-red-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 flex items-center justify-center w-full p-12">
           <div className="text-center">
             <Link href={"/"}>
-              <div className="pl-16">
+              <div className="pl-16 border bg-white rounded-md">
                 <img
                   src="/bhayangkarakita.png"
                   alt="Mikul News Logo"
@@ -203,7 +203,9 @@ export default function Login() {
               </div>
             </Link>
             <div className="mt-8 text-white/90">
-              <h2 className="text-2xl font-bold mb-2">Portal Mikul News</h2>
+              <h2 className="text-2xl font-bold mb-2">
+                Portal BhayangkaraKita
+              </h2>
               <p className="text-sm opacity-80">
                 Platform berita terpercaya untuk informasi terkini
               </p>
@@ -426,7 +428,7 @@ export default function Login() {
                   Selamat Datang
                 </h2>
                 <p className="text-gray-600">
-                  Portal Mikul News - Platform berita terpercaya
+                  Portal BhayangkaraKita - Platform berita terpercaya
                 </p>
               </div>
 
