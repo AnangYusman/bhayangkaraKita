@@ -1,7 +1,8 @@
 "use client";
-import { Menu } from "lucide-react";
+import { Lock, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   return (
@@ -50,6 +51,15 @@ export default function Navbar() {
 
           {/* Kanan: Search Icon */}
           <div className="flex items-center space-x-4 text-black mt-2 md:mt-0 mr-3 md:mr-3 lg:mr-3 xl:mr-0  ">
+            <Button className="bg-black text-white">
+              <Link
+                href="/auth"
+                className="hover:underline flex items-center gap-1"
+              >
+                <Lock className="w-3 h-3" />
+                Login
+              </Link>
+            </Button>
             <Link href="#" className="text-[#DD3333]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
