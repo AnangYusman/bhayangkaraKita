@@ -21,9 +21,9 @@ export const PdfIcon = ({
     />
     <path
       fill="currentColor"
-      fillRule="evenodd"
+      // fillRule="evenodd"="evenodd"
       d="M1 1.5A1.5 1.5 0 0 1 2.5 0h8.207L14 3.293V13.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 1 13.5zM3.5 6H2v5h1V9h.5a1.5 1.5 0 1 0 0-3m4 0H6v5h1.5A1.5 1.5 0 0 0 9 9.5v-2A1.5 1.5 0 0 0 7.5 6m2.5 5V6h3v1h-2v1h1v1h-1v2z"
-      clipRule="evenodd"
+      //    // clipRule="evenodd"="evenodd"
     />
   </svg>
 );
@@ -43,9 +43,9 @@ export const CsvIcon = ({
   >
     <path
       fill="currentColor"
-      fillRule="evenodd"
+      // fillRule="evenodd"="evenodd"
       d="M1 1.5A1.5 1.5 0 0 1 2.5 0h8.207L14 3.293V13.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 1 13.5zM2 6h3v1H3v3h2v1H2zm7 0H6v3h2v1H6v1h3V8H7V7h2zm2 0h-1v3.707l1.5 1.5l1.5-1.5V6h-1v3.293l-.5.5l-.5-.5z"
-      clipRule="evenodd"
+      // clipRule="evenodd"="evenodd"
     />
   </svg>
 );
@@ -69,9 +69,9 @@ export const ExcelIcon = ({
     />
     <path
       fill="currentColor"
-      fillRule="evenodd"
+      // fillRule="evenodd"="evenodd"
       d="M3.5 0A1.5 1.5 0 0 0 2 1.5V3h-.5A1.5 1.5 0 0 0 0 4.5v6A1.5 1.5 0 0 0 1.5 12H2v1.5A1.5 1.5 0 0 0 3.5 15h10a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 13.5 0zm-2 4a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5z"
-      clipRule="evenodd"
+      // clipRule="evenodd"="evenodd"
     />
   </svg>
 );
@@ -95,9 +95,9 @@ export const WordIcon = ({
     />
     <path
       fill="currentColor"
-      fillRule="evenodd"
+      // fillRule="evenodd"="evenodd"
       d="M3.5 0A1.5 1.5 0 0 0 2 1.5V3h-.5A1.5 1.5 0 0 0 0 4.5v6A1.5 1.5 0 0 0 1.5 12H2v1.5A1.5 1.5 0 0 0 3.5 15h10a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 13.5 0zm-2 4a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5z"
-      clipRule="evenodd"
+      // clipRule="evenodd"="evenodd"
     />
   </svg>
 );
@@ -122,9 +122,9 @@ export const PptIcon = ({
     />
     <path
       fill="currentColor"
-      fillRule="evenodd"
+      // fillRule="evenodd"="evenodd"
       d="M1 1.5A1.5 1.5 0 0 1 2.5 0h8.207L14 3.293V13.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 1 13.5zM2 6h1.5a1.5 1.5 0 1 1 0 3H3v2H2zm4 0h1.5a1.5 1.5 0 1 1 0 3H7v2H6zm5 5h1V7h1V6h-3v1h1z"
-      clipRule="evenodd"
+      // clipRule="evenodd"="evenodd"
     />
   </svg>
 );
@@ -168,9 +168,9 @@ export const UserProfileIcon = ({
     />
     <path
       fill="currentColor"
-      fillRule="evenodd"
+      // fillRule="evenodd"="evenodd"
       d="M16 8c0 4.42-3.58 8-8 8s-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8M4 13.75C4.16 13.484 5.71 11 7.99 11c2.27 0 3.83 2.49 3.99 2.75A6.98 6.98 0 0 0 14.99 8c0-3.87-3.13-7-7-7s-7 3.13-7 7c0 2.38 1.19 4.49 3.01 5.75"
-      clipRule="evenodd"
+      // clipRule="evenodd"="evenodd"
     />
   </svg>
 );

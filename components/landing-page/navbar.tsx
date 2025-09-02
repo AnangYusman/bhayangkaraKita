@@ -3,8 +3,10 @@ import { Lock, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   return (
     <>
       <div className="w-full bg-white ">
@@ -29,24 +31,31 @@ export default function Navbar() {
 
           {/* Tengah: Menu Utama */}
           <nav className="hidden md:flex space-x-8 font-bold text-sm text-black">
-            <a href="#" className="relative">
-              <span className="border-b-2 border-black pb-1">Beranda</span>
-            </a>
-            <a href="#" className="hover:text-gray-700">
-              Giat Utama
-            </a>
-            <a href="#" className="hover:text-gray-700">
-              Pelayanan
-            </a>
-            <a href="#" className="hover:text-gray-700">
-              Inspirasi
-            </a>
-            <a href="#" className="hover:text-gray-700">
-              Opini
-            </a>
-            <a href="#" className="hover:text-gray-700">
-              Prestasi Polri
-            </a>
+            {[
+              { href: "/", label: "Beranda" },
+              { href: "/category/main-activity", label: "Giat Utama" },
+              { href: "/category/service", label: "Pelayanan" },
+              { href: "/category/inspiration", label: "Inspirasi" },
+              { href: "/category/opinion", label: "Opini" },
+              {
+                href: "/category/police-achievements",
+                label: "Prestasi Polri",
+              },
+            ].map((item) => {
+              const isActive = pathname === item.href;
+
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`hover:text-gray-700 relative pb-1 ${
+                    isActive ? "border-b-2 border-black" : ""
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Kanan: Search Icon */}
